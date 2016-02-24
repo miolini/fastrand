@@ -11,7 +11,7 @@ func BenchmarkMod(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		n3 = n1 % n2
 	}
-	n3 = n3
+	n1 = n3
 }
 
 func BenchmarkFastRand(b *testing.B) {
@@ -22,13 +22,13 @@ func BenchmarkFastRand(b *testing.B) {
 
 func TestFastRand(t *testing.T) {
 	var iters int = 1e9
-	var shards int = 4
+	var shards = 4
 	data := map[int]int{}
 	for i := 0; i < iters; i++ {
 		data[FastRand(shards)]++
 	}
 	var min int = 1e15
-	var max int = 0
+	var max = 0
 	for _, counter := range data {
 		if counter < min {
 			min = counter
