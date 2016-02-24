@@ -15,3 +15,4 @@ func main() {
     fmt.Println(fastrand.Fastrand(64))
   }
 }
+```
