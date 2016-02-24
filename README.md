@@ -1,7 +1,7 @@
 # FastRand
 FastRand generate pseudo random int between 0 and n. Argument n must be power of 2. Average working time of FastRand is 6ns.
 
-[![Build Status](https://travis-ci.org/miolini/fastrand)](https://travis-ci.org/miolini/fastrand.svg) [![Go Report Card](http://goreportcard.com/badge/miolini/fastrand)](http://goreportcard.com/report/miolini/fastrand)
+[![Build Status](https://travis-ci.org/miolini/fastrand.svg)](https://travis-ci.org/miolini/fastrand) [![Go Report Card](http://goreportcard.com/badge/miolini/fastrand)](http://goreportcard.com/report/miolini/fastrand)
 
 # Example
 ```go
